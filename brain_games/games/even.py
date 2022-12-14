@@ -16,7 +16,7 @@ def even_game():
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        print('Question:', num)
+        print(f'Question:, {num}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct')
