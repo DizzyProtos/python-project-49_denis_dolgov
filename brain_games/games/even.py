@@ -6,7 +6,7 @@ import prompt
 
 def even_game():
     print('Welcome to the Braine Games!')
-    name = promt.string('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -17,7 +17,7 @@ def even_game():
         else:
             correct_answer = 'no'
         print('Question:', num)
-        answer = promt.string('Your answer: ')
+        answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct')
         else:
