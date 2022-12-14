@@ -7,7 +7,7 @@ import prompt
 
 def calc_game():
     print('Welcome to the Brain Games!')
-    name = prompt.strint('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print('What is the result of the expression?')
 
@@ -22,7 +22,7 @@ def calc_game():
         else:
             correct_answer = num1 * num2
         print(f"'Question:' {num1} {operator} {num2}")
-        answer = prompt.string('Your answer: ')
+        answer = int(prompt.string('Your answer: '))
         if answer == correct_answer:
             print('Correct')
         else:
