@@ -9,15 +9,13 @@ GAME = 'Answer "yes" if given number is prime. Otherwisr answer "no".'
 
 def brain_ring():
     num = randint(1, 100)
-    i = 0
-    k = 1
     question = str(num)
-    while k <= num:
-        if num % k == 0:
+    i = 0
+    for n in range(2, num // 2 + 1):
+        if num % n == 0:
             i += 1
-            k += 1
-        if i == 2:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
+    if i > 0:
+        correct_answer = 'no'
+    else:
+        correct_answer = 'yes'
     return question, correct_answer

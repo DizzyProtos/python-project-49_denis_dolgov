@@ -13,9 +13,9 @@ def brain_ring():
         operator = choice('+-*')
         question = f"{num1} {operator} {num2}"
         if operator == '+':
-            correct_answer = num1 + num2
+            correct_answer = str(num1 + num2)
         elif operator == '-':
-            correct_answer = num1 - num2
+            correct_answer = str(num1 - num2)
         else:
-            correct_answer = num1 * num2
+            correct_answer = str(num1 * num2)
     return question, correct_answer

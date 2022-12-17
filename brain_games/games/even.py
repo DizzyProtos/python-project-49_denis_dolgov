@@ -14,4 +14,3 @@ def brain_ring():
     else:
         correct_answer = 'no'
     return question, correct_answer
-
