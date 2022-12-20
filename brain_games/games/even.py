@@ -6,8 +6,12 @@ from random import randint
 GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+MIN_NUM = 1
+MAX_NUM = 50
+
+
 def brain_ring():
-    num = randint(1, 50)
+    num = randint(MIN_NUM, MAX_NUM)
     question = str(num)
     if num % 2 == 0:
         correct_answer = 'yes'

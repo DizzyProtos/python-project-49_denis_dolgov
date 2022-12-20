@@ -7,8 +7,12 @@ from random import randint
 GAME = 'Answer "yes" if given number is prime. Otherwisr answer "no".'
 
 
+MIN_NUM = 1
+MAX_NUM = 50
+
+
 def brain_ring():
-    num = randint(1, 100)
+    num = randint(MIN_NUM, MAX_NUM)
     question = str(num)
     i = 0
     for n in range(2, num // 2 + 1):

@@ -18,4 +18,4 @@ def game_start(game):
 Correct answer was '{correct_answer}'.
 Let's try again, {name}!""")
             break
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
